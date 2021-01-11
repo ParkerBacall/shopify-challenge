@@ -3,7 +3,11 @@
     flex-direction: column;
     justify-content: center;
 }
-
+.lower-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .main-title-containter{
     display:flex;
     justify-content: center;
@@ -28,13 +32,40 @@
 }
 .search-results-container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: 0px 0px 0px 0.4px #666;
+    padding: 10px;
+    margin: 10px;
 
 }
 .search-results{
-    width: 50%;
     margin: 20px;
     padding: 20px;
-    box-shadow: 0px 0px 0px 0.4px #666;
 
+}
+
+.movie-card{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.movie-title{
+    padding:10px;
+}
+.movie-year{
+    padding:10px;
+}
+.movie-poster{
+
+    width:50px;
+}
+.nominations-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: 0px 0px 0px 0.4px #666;
+    padding: 10px;
+    margin: 10px;
 }
