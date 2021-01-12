@@ -7,7 +7,7 @@ export default function RemoveNomination({removeNomination, nomination}) {
     }
 
     return (
-        <div>
+        <div className ="button-container">
           <button onClick={handleClick} className="remove-btn">Remove</button>
         </div>
     )

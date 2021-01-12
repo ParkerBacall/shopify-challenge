@@ -7,7 +7,7 @@ export default function AddNomination({addNomination, movie}) {
     }
 
     return (
-        <div>
+        <div className="button-container">
             <button onClick={handleClick} className="nominate-btn">Nominate!</button>
         </div>
     )

@@ -23,8 +23,7 @@ class SearchBar extends Component {
    
     render(){
     return (
-
-        <div className="search-bar-full-width">
+        <div className="search-bar-contanier">
             <h2>Movie Title</h2>
             <form
             onSubmit={this.handleSubmit}>
