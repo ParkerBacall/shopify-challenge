@@ -1,9 +1,44 @@
 .page-container{
     display: flex;
     justify-content: center;
+    background-color: lightblue;
+    height:100%;
+
 }
 .page{
     width:80%;
+    height:100vh;
+
+    background-color: lightblue;
+
+
+}
+
+.navigation-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.navigation-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.navigation-item{
+    padding: 10px;
+}
+
+.navigation-link{
+    color: gold;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navigation-link:hover{
+    color: rgb(212,175,55);
+
 }
 
 /* The Modal (background) */
@@ -132,4 +167,52 @@
 .button-container{
     display: flex;
     align-items: center;
+}
+
+.nominate-btn{
+    background-color: gold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+} 
+.nominate-btn:hover{
+    background-color: rgb(212,175,55);
+
+
+}
+.remove-btn{
+    background-color: rgb(156, 60, 40);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+
+.remove-btn:hover{
+    background-color: rgb(156, 40, 40);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+
+.button-container .disabled{
+    cursor:default;
+    opacity: 0.6;
+    background-color: gold;
+
+}
+
+.button-container .disabled:hover{
+    cursor:default;
+    opacity: 0.6;
+    background-color: gold;
+
+
 }

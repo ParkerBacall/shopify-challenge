@@ -1,6 +1,7 @@
 import React from 'react'
+import Nominations from './Nominations'
 
-export default function CongratsModal() {
+export default function CongratsModal({nominations, removeNomination}) {
 
     const closeModal = () => {
         document.querySelector('.modal').style.display ='none'
@@ -11,7 +12,10 @@ export default function CongratsModal() {
           <div class="modal-content">
           <span onClick={closeModal} class="close">&times;</span>
 
-            <p>Yoooo congrats!!</p>
+            <h1>Thank You!</h1>
+            <p>Please Review Your submissions and submit bellow!</p>
+            <Nominations nominations={nominations} removeNomination={removeNomination}/>
+            <button>Sumbit!</button>
             </div>
 </div>
     )

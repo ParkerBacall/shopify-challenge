@@ -3,7 +3,7 @@ import AddNomination from "./AddNomination"
 import placeholder from "../assets/PosterPlaceholder.jpeg"
 
 
-export default function MovieCard({movie, addNomination}) {
+export default function MovieCard({movie, addNomination, nominations}) {
     return (
         <div className="movie-card">
             
@@ -13,7 +13,7 @@ export default function MovieCard({movie, addNomination}) {
            }
            <p className='movie-title'>{movie.Title}</p>
             <p className='movie-year'>({movie.Year})</p>
-            <AddNomination movie={movie} addNomination={addNomination}/>
+            <AddNomination movie={movie} nominations={nominations} addNomination={addNomination}/>
         </div>
     )
 }

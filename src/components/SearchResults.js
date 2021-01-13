@@ -1,11 +1,11 @@
 import React from 'react'
 import MovieCard from "./MovieCard"
 
-export default function SearchResults({movies,addNomination }) {
+export default function SearchResults({movies,addNomination, nominations }) {
 
 
     const movieCards = movies.map(movie => {
-        return <MovieCard movie={movie} addNomination={addNomination}/>
+        return <MovieCard  movie={movie} nominations={nominations} addNomination={addNomination}/>
     })
 
 
