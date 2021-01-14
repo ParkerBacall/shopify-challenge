@@ -1,0 +1,96 @@
+[debug] [2021-01-14T05:18:01.335Z] ----------------------------------------------------------------------
+[debug] [2021-01-14T05:18:01.338Z] Command:       /Users/parkerbacall/.nvm/versions/node/v13.12.0/bin/node /Users/parkerbacall/.nvm/versions/node/v13.12.0/bin/firebase init
+[debug] [2021-01-14T05:18:01.339Z] CLI Version:   9.2.0
+[debug] [2021-01-14T05:18:01.339Z] Platform:      darwin
+[debug] [2021-01-14T05:18:01.339Z] Node Version:  v13.12.0
+[debug] [2021-01-14T05:18:01.341Z] Time:          Wed Jan 13 2021 21:18:01 GMT-0800 (Pacific Standard Time)
+[debug] [2021-01-14T05:18:01.341Z] ----------------------------------------------------------------------
+[debug] [2021-01-14T05:18:01.341Z] 
+[debug] [2021-01-14T05:18:01.347Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-14T05:18:01.348Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/parkerbacall/lets_code/shopify-challenge
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-01-14T05:18:07.085Z] > refreshing access token with scopes: []
+[debug] [2021-01-14T05:18:07.086Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-14T05:18:07.243Z] <<< HTTP RESPONSE 400 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 14 Jan 2021 05:18:07 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-14T05:18:07.246Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-01-14T05:18:07.384Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2021-01-14T05:18:07.384Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2021-01-14T05:18:07.384Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2021-01-14T05:18:07.484Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/apiv2.js:218:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/apiv2.js:93:20)
+    at async getProjectPage (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/management/projects.js:232:17)
+    at async getFirebaseProjectPage (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/management/projects.js:249:23)
+    at async selectProjectInteractively (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/management/projects.js:95:41)
+    at async Object.doSetup [as project] (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/init/features/project.js:87:27)
+    at async init (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2021-01-14T05:18:50.423Z] ----------------------------------------------------------------------
+[debug] [2021-01-14T05:18:50.425Z] Command:       /Users/parkerbacall/.nvm/versions/node/v13.12.0/bin/node /Users/parkerbacall/.nvm/versions/node/v13.12.0/bin/firebase init
+[debug] [2021-01-14T05:18:50.426Z] CLI Version:   9.2.0
+[debug] [2021-01-14T05:18:50.426Z] Platform:      darwin
+[debug] [2021-01-14T05:18:50.426Z] Node Version:  v13.12.0
+[debug] [2021-01-14T05:18:50.427Z] Time:          Wed Jan 13 2021 21:18:50 GMT-0800 (Pacific Standard Time)
+[debug] [2021-01-14T05:18:50.428Z] ----------------------------------------------------------------------
+[debug] [2021-01-14T05:18:50.428Z] 
+[debug] [2021-01-14T05:18:50.434Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-14T05:18:50.435Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/parkerbacall/lets_code/shopify-challenge
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-01-14T05:18:57.178Z] > refreshing access token with scopes: []
+[debug] [2021-01-14T05:18:57.179Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-14T05:18:57.335Z] <<< HTTP RESPONSE 400 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 14 Jan 2021 05:18:57 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-14T05:18:57.338Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-01-14T05:18:57.455Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2021-01-14T05:18:57.456Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2021-01-14T05:18:57.456Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2021-01-14T05:18:57.564Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/apiv2.js:218:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/apiv2.js:93:20)
+    at async getProjectPage (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/management/projects.js:232:17)
+    at async getFirebaseProjectPage (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/management/projects.js:249:23)
+    at async selectProjectInteractively (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/management/projects.js:95:41)
+    at async Object.doSetup [as project] (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/init/features/project.js:87:27)
+    at async init (/Users/parkerbacall/.nvm/versions/node/v13.12.0/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
