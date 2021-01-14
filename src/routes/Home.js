@@ -15,7 +15,7 @@ class Home extends Component {
 
 
   getMovies = term => {
-    fetch('http://www.omdbapi.com/?s=' + term + '&type=movie&apikey=728e9f86')
+    fetch('https://www.omdbapi.com/?s=' + term + '&type=movie&apikey=728e9f86')
     .then(response => response.json())
     .then(response => {
       if(response.Response !== "False"){
