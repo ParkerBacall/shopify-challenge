@@ -1,5 +1,4 @@
 import React from 'react'
-import Nominations from './Nominations'
 
 export default function AddNomination({addNomination, movie, nominations}) {
 
