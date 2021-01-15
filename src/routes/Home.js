@@ -31,7 +31,9 @@ class Home extends Component {
 
   addNomination= movie => {
     if (!this.state.nominations.includes(movie)){
+      if(this.state.nominations.length < 5){
     this.setState({nominations: [...this.state.nominations, movie] })
+    }
     }
   }
 

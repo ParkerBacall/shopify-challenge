@@ -3,12 +3,20 @@ import Nominations from './Nominations'
 
 export default function CongratsModal({nominations, removeNomination}) {
 
+
     const closeModal = () => {
         document.querySelector('.modal').style.display ='none'
     }
+    window.onclick = function(event) {
+        const modal = document.querySelector('.modal')
+
+    if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
 
     return (
-        <div className="modal" onClick={closeModal}>
+        <div className="modal" >
           <div class="modal-content">
           <span onClick={closeModal} class="close">&times;</span>
 

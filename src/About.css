@@ -1,0 +1,17 @@
+.about-content-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.about-title{
+    text-align:center;
+}
+.about-paragraph{
+    text-align:center;
+}
+
+/* .about .navigation-link{
+color: rgb(212,175,55);
+
+} */
