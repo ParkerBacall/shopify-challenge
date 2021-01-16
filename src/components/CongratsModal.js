@@ -1,5 +1,5 @@
 import React from 'react'
-import Nominations from './Nominations'
+import ModalNominations from './ModalNominations'
 
 export default function CongratsModal({nominations, removeNomination}) {
 
@@ -20,10 +20,12 @@ export default function CongratsModal({nominations, removeNomination}) {
           <div class="modal-content">
           <span onClick={closeModal} class="close">&times;</span>
 
-            <h1>Thank You!</h1>
-            <p>Please Review Your submissions and submit bellow!</p>
-            <Nominations nominations={nominations} removeNomination={removeNomination}/>
+            <h1 className="modal-title">Thank You!</h1>
+            <p className="modal-text">Please Review Your submissions and submit bellow!</p>
+            <ModalNominations nominations={nominations} removeNomination={removeNomination}/>
+            <div className="submit-container">
             <button>Sumbit!</button>
+            </div>
             </div>
 </div>
     )

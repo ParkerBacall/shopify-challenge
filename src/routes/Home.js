@@ -5,6 +5,7 @@ import SearchBar from "../components/SearchBar"
 import SearchResults from "../components/SearchResults"
 import Nominations from "../components/Nominations"
 import CongratsModal from "../components/CongratsModal"
+import ModalOpener from "../components/ModalOpener"
 
 class Home extends Component {
   state = {
@@ -54,6 +55,7 @@ class Home extends Component {
         <div></div>
       }
             <SearchBar getMovies={this.getMovies} />
+            {this.state.nominations.length >= 5 ? <ModalOpener/> : <div></div>}
             <div class="reviews-and-nominations">
              {this.state.movies.length >= 1 ? <SearchResults nominations={this.state.nominations} movies={this.state.movies} addNomination={this.addNomination}/> 
              : 

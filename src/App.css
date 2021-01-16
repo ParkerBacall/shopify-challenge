@@ -39,28 +39,37 @@ body{
 
 }
 
-/* The Modal (background) */
+
 .modal {
-    display: block; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: block; 
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
   }
   
   /* Modal Content/Box */
   .modal-content {
     background-color: lightblue;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
   }
+  .modal-title,.modal-text{
+    width:100%;
+    text-align:center;
+  }
+  .review-submissions-container{
+      padding:20px;
+      display: flex;
+      justify-content: center;
+  }
+
   
   /* The Close Button */
   .close {
@@ -76,7 +85,58 @@ body{
     text-decoration: none;
     cursor: pointer;
   }
+.modal-nominations-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.modal-nominations-title{
+    width:100%;
+    text-align: center;
+}
+.modal-movie-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 175px;
+    position: relative;
+}
+.modal-movie-title{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.modal-movie-title p{
+    text-align: center;
+}
+.modal-movie-year{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.modal-movie-year p{
+   text-align: center;
+}
 
+
+.modal-movie-image-container{
+    display:flex;
+    justify-content: center;
+}
+.modal-movie-poster{
+    width:65px;
+}
+.modal-remove-container{
+    position: absolute;
+    top:0;
+    right:0;
+
+}
+.submit-container{
+    display:flex;
+    width:100%;
+    justify-content: center;
+}
 .header-image{
     width: 400px;
 }
