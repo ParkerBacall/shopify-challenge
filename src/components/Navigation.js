@@ -4,8 +4,8 @@ export default function Navigation() {
     return (
         <div className="navigation-container"> 
             <ul className="navigation-list">
-                <li className="navigation-item home"> <a className="navigation-link" href="/">Home</a></li>
-                <li className="navigation-item about">< a className="navigation-link" href="/about">About</a> </li>
+                 <a className="navigation-link" href="/"><li className="navigation-item home">Home</li></a>
+                <a className="navigation-link" href="/about"><li className="navigation-item about">About</li></a>
             </ul>
         </div>
     )

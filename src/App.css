@@ -1,6 +1,9 @@
 body{
 
-    background-color: lightblue;
+   background-image: url('./assets/background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
 
 }
 .page-container{
@@ -16,7 +19,6 @@ body{
     display: flex;
     width: 100%;
     justify-content: center;
-
 }
 .navigation-list{
     list-style: none;
@@ -25,6 +27,15 @@ body{
 }
 .navigation-item{
     padding: 10px;
+    margin:10px;
+    background-color: rgba(145,145,145,0.8);
+    
+    border-radius: 5px;
+}
+.navigation-item:hover{
+    color: rgb(212,175,55);
+
+    background-color: rgba(145,145,145,0.8);
 }
 
 .navigation-link{
@@ -34,10 +45,6 @@ body{
     font-weight: 500;
 }
 
-.navigation-link:hover{
-    color: rgb(212,175,55);
-
-}
 
 
 .modal {
@@ -54,7 +61,7 @@ body{
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: lightblue;
+    background-color: #999;
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
@@ -156,7 +163,6 @@ body{
 
 .search-bar-contanier{
     width:100%;
-    box-shadow: 0px 0px 0px 0.4px #666;
     padding: 20px;
     height: auto;
 
@@ -165,6 +171,11 @@ body{
 .search-bar-input{
     width:100%;
     height:50px;
+    border: solid 1px black ;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding: 5px;
+    padding-left:15px
 }
 .search-placeholder{
     display: flex;
@@ -185,6 +196,7 @@ body{
     margin-right:10px;
     width:50%;
     padding:10px;
+    background-color: rgba(145,145,145,0.8);
 }
 .search-results{
     padding: 20px;
@@ -208,6 +220,7 @@ body{
 }
 .nominations-container{
     display: flex;
+    background-color: rgba(145,145,145,0.8);
     flex-direction: column;
     box-shadow: 0px 0px 0px 0.4px #666;
     margin-top: 20px;
