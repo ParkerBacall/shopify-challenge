@@ -11,7 +11,8 @@ class Home extends Component {
   state = {
     movies: [],
     nominations: [],
-    searchTerm: ""
+    searchTerm: "",
+    error: false
   }
 
 
@@ -21,7 +22,13 @@ class Home extends Component {
     .then(response => {
       if(response.Response !== "False"){
       this.setState({
-      movies : response.Search
+      movies : response.Search,
+      error:false
+
+    })
+  } else{
+    this.setState({
+      error:true
     })
   }
   
@@ -57,9 +64,11 @@ class Home extends Component {
             <SearchBar getMovies={this.getMovies} />
             {this.state.nominations.length >= 5 ? <ModalOpener/> : <div></div>}
             <div class="reviews-and-nominations">
-             {this.state.movies.length >= 1 ? <SearchResults nominations={this.state.nominations} movies={this.state.movies} addNomination={this.addNomination}/> 
-             : 
+
+             {this.state.error === false && this.state.movies.length > 1 ? <SearchResults nominations={this.state.nominations} movies={this.state.movies} addNomination={this.addNomination}/> 
+             :
              <div className="search-placeholder"></div>
+
              }
 
              {this.state.nominations.length >= 1 ? <Nominations nominations={this.state.nominations} removeNomination={this.removeNomination}/>

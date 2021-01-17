@@ -57,22 +57,29 @@ body{
     height: 100%; 
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    overflow: auto;
   }
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #999;
-    margin: 15% auto; 
+    background-color: rgba(145,145,145,1);
+    margin: 7% auto; 
     padding: 20px;
     border: 1px solid #888;
     width: 80%; 
   }
-  .modal-title,.modal-text{
+  .modal-title{
     width:100%;
+    text-align:center;
+  }
+  .modal-text{
+    width:100%;
+    color:blackgold;
     text-align:center;
   }
   .review-submissions-container{
       padding:20px;
+      
       display: flex;
       justify-content: center;
   }
@@ -80,7 +87,7 @@ body{
   
   /* The Close Button */
   .close {
-    color: #aaa;
+    color: rgb(156, 0, 40);   
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -88,7 +95,8 @@ body{
   
   .close:hover,
   .close:focus {
-    color: black;
+    color: rgb(156, 60, 40);   
+
     text-decoration: none;
     cursor: pointer;
   }
@@ -256,7 +264,7 @@ body{
 
 }
 .remove-btn{
-    background-color: rgb(156, 60, 40);
+    background-color: rgb(156, 0, 40);
     cursor: pointer;
     border: none;
     border-radius: 10px;
@@ -266,7 +274,7 @@ body{
 }
 
 .remove-btn:hover{
-    background-color: rgb(156, 40, 40);
+    background-color: rgb(156, 60, 40);
     cursor: pointer;
     border: none;
     border-radius: 10px;
@@ -289,3 +297,90 @@ body{
 
 
 }
+.review-submissions-button, .submit-button{
+    padding: 15px;
+    margin:10px;
+    background-color: rgba(145,145,145,0.8);
+    color: gold;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight:bold;
+}
+.review-submissions-button:hover, .submit-button:hover{
+    color: rgb(212,175,55);
+    cursor: pointer;
+    background-color: rgba(145,145,145,0.9);
+}
+
+.modal-remove-button{
+    border:none;
+    background-color: rgb(156, 0, 40);
+
+    border-radius: 15px;
+    height:18px;
+}
+
+.modal-remove-button:hover{
+    background-color: rgb(156, 60, 40);
+    cursor: pointer;
+}
+.selected {
+    color: rgb(212,175,55);
+    }
+
+    .loading-dots {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 80px;
+        height: 80px;
+      }
+      .loading-dots div {
+        position: absolute;
+        top: 33px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: gold;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+      }
+      .loading-dots div:nth-child(1) {
+        left: 8px;
+        animation: lds-ellipsis1 0.6s infinite;
+      }
+      .loading-dots div:nth-child(2) {
+        left: 8px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+      .loading-dots div:nth-child(3) {
+        left: 32px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+      .loading-dots div:nth-child(4) {
+        left: 56px;
+        animation: lds-ellipsis3 0.6s infinite;
+      }
+      @keyframes lds-ellipsis1 {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @keyframes lds-ellipsis3 {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0);
+        }
+      }
+      @keyframes lds-ellipsis2 {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(24px, 0);
+        }
+      }

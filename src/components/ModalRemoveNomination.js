@@ -8,7 +8,7 @@ export default function ModalRemoveNomination({removeNomination, nomination}) {
 
     return (
         <div className ="modal-remove-container">
-          <button onClick={handleClick} className="modal-remove-btn">x</button>
+          <button onClick={handleClick} className="modal-remove-button">x</button>
         </div>
     )
 }

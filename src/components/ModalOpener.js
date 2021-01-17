@@ -6,7 +6,7 @@ export default function ModalOpener() {
     }
     return (
         <div className="review-submissions-container">
-            <button onClick={openModal} className="review-submissions-button"> Review Submissions </button>
+            <button onClick={openModal} className="review-submissions-button"> Review Nominations and Submit </button>
         </div>
     )
 }
